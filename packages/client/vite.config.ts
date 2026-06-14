@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
-    host: true, // expose on LAN so roommates / tunnels can reach it
+    host: true,
+    allowedHosts: true,
   },
 });
